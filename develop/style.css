@@ -1,0 +1,63 @@
+.head {
+    text-align: center;
+    background-color: navy;
+    color : white;
+    padding: 8px;
+}
+.btn {
+    background-color: blue;
+    border-radius: 5px;
+    padding: 2px;
+}
+:hover.btn{
+    background-color: grey;}
+
+.searhBar{
+    font-size: medium;
+    justify-content: center;
+    padding: 0px;
+
+}
+
+.cardBody{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cityN{
+    font-size: x-large;
+    color:black;
+}
+
+.forCastBox{
+    display:flex;
+    color: white;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.day{
+    background-color: blue;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.crntWeather{
+    padding-bottom: 50px;
+}
+.goodCondition{
+    background-color: yellow;
+}
+.uvIndexName{
+    display: flex;
+}
+
+.uvIndex{
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 4px;
+}
+
+.p{
+    margin: 2px;
+}
