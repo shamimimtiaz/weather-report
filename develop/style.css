@@ -15,35 +15,48 @@
 .searhBar{
     font-size: medium;
     justify-content: center;
-    padding: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style:groove;
 
 }
 
 .cardBody{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-bottom: 50px;
 }
 
 .cityN{
     font-size: x-large;
+    font-weight: bold;
     color:black;
 }
 
 .forCastBox{
+    font-size: small;
     display:flex;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 20px;
 }
 
 .day{
     background-color: blue;
     padding:10px;
+    margin:2px;
     border-radius: 5px;
 }
 
 .crntWeather{
+    padding-top: 20px;
+    padding-left: 20px;
     padding-bottom: 50px;
+    background-color: rgb(173, 172, 172);    
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    color: black;
 }
 .goodCondition{
     background-color: yellow;
@@ -55,9 +68,27 @@
 .uvIndex{
     border-radius: 5px;
     padding: 5px;
-    margin-left: 4px;
 }
 
 .p{
     margin: 2px;
+}
+
+.currentIcon {
+    border-radius: 5px;
+}
+.title{
+    font-size: x-large;
+    font-weight: bold;
+    color:black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col-sm-8{
+    padding-top: 20px;
+}
+
+.col-sm-4 {
+    padding:20px;
 }

@@ -18,14 +18,16 @@
            <div class = "title"> Search For a City</div>
             <form id="user-form" class="cardBody">
                 <input name="cityname" id="cityname" type="text" autofocus="true" class="formInput" />
-                <button type="search" class="btn">🔍</button>
+                <button type="submit" class="btn">🔍</button> 
+                <!--<button type="search" class="btn">🔍</button>-->
             </form>
         </div>
         </div>
         <div class="col-sm-8">
-            <p1>Weather today</p1>
+            
             <div class=crntWeather id=currentWeather>
-                <div id="city" class="cityN"> City Name: </div>
+                <div id="city" class="cityN"></div>
+                <div id ="currentIcon"></div>
                 <div id="temp"> Temperature : </div>
                 <div id="humdty"> Humidity : </div>
                 <div id="wind"> Wind Speed : </div>
@@ -35,35 +37,35 @@
                 </div>
             </div>
             <div class=frCstWeather id=frCstWther>
-                <h3>5-Day Forecast</h3>
+                <div class=title>5-Day Forecast</div>
                 <div class =forCastBox>
                     <div id = day1 class="day">
                         <div id =day1Date>Date</div>
-                        <div id =day1Icon>Icon</div>
+                        <div id =day1Icon></div>
                         <div id =day1Temp>Temp</div>
                         <div id =day1Hum>Humidity</div>
                     </div>
                     <div id = day2 class="day">
                         <div id =day2Date>Date</div>
-                        <div id =day2Icon>Icon</div>
+                        <div id =day2Icon></div>
                         <div id =day2Temp>Temp</div>
                         <div id =day2Hum>Humidity</div>
                     </div>
                     <div id = day3 class="day">
                         <div id =day3Date>Date</div>
-                        <div id =day3Icon>Icon</div>
+                        <div id =day3Icon></div>
                         <div id =day3Temp>Temp</div>
                         <div id =day3Hum>Humidity</div>
                     </div>
                     <div id = day4 class="day">
                         <div id =day4Date>Date</div>
-                        <div id =day4Icon>Icon</div>
+                        <div id =day4Icon></div>
                         <div id =day4Temp>Temp</div>
                         <div id =day4Hum>Humidity</div>
                     </div>
                     <div id = day5 class="day">
                         <div id =day5Date>Date</div>
-                        <div id =day5Icon>Icon</div>
+                        <div id =day5Icon></div>
                         <div id =day5Temp>Temp</div>
                         <div id =day5Hum>Humidity</div>
                     </div>
@@ -72,7 +74,7 @@
         </div>
       </div>
 
-     
+      <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>    
 <script src="./develop/script.js"></script>
 </body>
 </html>
