@@ -32,7 +32,8 @@ Shows the city name, date, condition icon, temperature, humidity, wind speed and
 5-day forecast view
 Shows temperature, humidity,condition icon for the next 5 days in imperical unites.
 
-Repo Information:
+GitHub Link: https://github.com/shamimimtiaz/weather-report.git
+Web Link :  https://shamimimtiaz.github.io/weather-report/
 
 
 Image Name: 
@@ -46,6 +47,14 @@ Image Name:
 -11d@2x
 -13d@2x
 -50d@2x
+-weather app
 
-MOCKUP:
+File Name :
+-index.html
+-style.css
+-script.js
+
+
+
+MOCKUP image:
 <img width="532" alt="weather app" src="https://user-images.githubusercontent.com/75001492/104864418-e4e7bb80-5906-11eb-9d6a-f037e55f6891.PNG">
