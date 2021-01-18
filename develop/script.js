@@ -10,7 +10,7 @@ userFormEl.addEventListener("submit", function(event){
   
     // get value from input element
     var usrChnCity = nameInputEl.value.trim();
-      
+    localStorage.setItem('name', usrChnCity);
     if (usrChnCity) {
         getUserCity(usrChnCity);
   
@@ -143,8 +143,6 @@ function displayFutWthr(latt,long){
         var image5Source = imageSource(iconDescription5);
         image5.src =image5Source;
         document.querySelector('#day5Icon').appendChild(image5);
-
-      //  image.src = "./develop/images/03d@2x.png";
         
     }
 function imageSource(iconDescription){
@@ -159,21 +157,7 @@ function imageSource(iconDescription){
     }else if(iconDescription==="Snow"){
         return "./develop/images/13d@2x.png";
     }else {return "./develop/images/50d@2x.png"}
+   
 }
 
-//---------------------------Call stored items on page load-------------------------------------//
-function pageLoad () {
-    var lastSearch = JSON.parse(localStorage.getItem("cityName"));
-    var searchDiv = $("<button class='btn border text-muted mt-1 shadow-sm bg-white rounded' style='width: 12rem;'>").text(lastSearch);
-    var psearch = $("<div>");
-    psearch.append(searchDiv)
-    $("#searchhistory").prepend(psearch);
-}
-
-//Event deligation...
-$("#searchhistory").on('click', '.btn', function(event) {
-event.preventDefault();
-    console.log($(this).text());
-    searchCity($(this).text());
-
-});
+localStorage.setItem ('name', getUserCity );
