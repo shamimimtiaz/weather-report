@@ -1,52 +1,51 @@
-# weather-report
-
-User Story:
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-
-Acceptance Criteria:
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-
-
 Weather dashboard: 
 1. Search bar where user can input the city name, they want to look at. 
 
-Left : 	City name used to query the API data. 
-Left : 	that city is added to the search history
-Left :	click on a city in the search history,  presented with current and future conditions for that city
-
-
+ 	City name used to query the API data. 
+	
 2. User is presented with current and future conditions for that city 
-	Current conditiions
-	
-	
+
+Current conditions: 
+	Name of the City	
+	The date
 	The temperature 
 	The humidity
 	The wind speed 
 	The UV index
-	UV Index with a color that indicates whether the conditions are favorable, moderate, or severe
+	UV Index with a color that indicates whether the conditions are favorable (green), moderate(yellow), or severe(red)
+	Icon of weather conditions 
+
+3. 5-day forecast that displays 
 	The date
+	an icon representation of weather conditions
+	the temperature 
+	the humidity
 
-Left:
-Icon of weather conditions
+The data used in the application is gotten from OpenWeather API (API documentation, installation documentation can be found at https://openweathermap.org/api). 
+
+Features of the application: 
+city search
+current weather condition (view)
+
+Shows the city name, date, condition icon, temperature, humidity, wind speed and UV Index for current weather condition imperical unites.. 
+
+5-day forecast view
+Shows temperature, humidity,condition icon for the next 5 days in imperical unites.
+
+Repo Information:
 
 
-3. 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-	
-	The date
+Image Name: 
 
-Left: 
-an icon representation of weather conditions
-the temperature 
-the humidity
+-01d@2x
+-03d@2x
+-04d@2x
+-09d@2x
+-10d@2x(1)
+-10d@2x
+-11d@2x
+-13d@2x
+-50d@2x
+
+MOCKUP:
+<img width="532" alt="weather app" src="https://user-images.githubusercontent.com/75001492/104864418-e4e7bb80-5906-11eb-9d6a-f037e55f6891.PNG">

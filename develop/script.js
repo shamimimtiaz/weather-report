@@ -21,7 +21,7 @@ userFormEl.addEventListener("submit", function(event){
 
 function getUserCity(usrChnCity){
  
-    var apiUrl ='http://api.openweathermap.org/data/2.5/weather?q='+usrChnCity+'&units=imperial&APPID=a812584800c73c0eb9e12320bd5b45ea';
+    var apiUrl ='https://api.openweathermap.org/data/2.5/weather?q='+usrChnCity+'&units=imperial&APPID=a812584800c73c0eb9e12320bd5b45ea';
     fetch(apiUrl)
         .then(function(response) {   //callback function
         return response.json(); //response converted to json
@@ -59,7 +59,7 @@ function getUserCity(usrChnCity){
 
    //getting UV index and printing onto screen
    function getUvData(latt,long) {
-       var uvurl = 'http://api.openweathermap.org/data/2.5/uvi?lat='+latt+'&lon='+long+'&appid=a812584800c73c0eb9e12320bd5b45ea';
+       var uvurl = 'https://api.openweathermap.org/data/2.5/uvi?lat='+latt+'&lon='+long+'&appid=a812584800c73c0eb9e12320bd5b45ea';
         fetch(uvurl)
             .then(function(response) {   
             return response.json(); 
